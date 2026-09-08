@@ -1,0 +1,5 @@
+homepage: "https://sendops.dev"
+documentation: "https://help.sendops.dev/website/installing-the-snippet"
+versions:
+  - sha: bc365d2aaee0787c24fdfe4ab12520ed6cabc80d
+    changeNotes: Initial release. Reads the first-party so_vid cookie, loads sendops.js, sends one site_visit per session; never writes a cookie.
