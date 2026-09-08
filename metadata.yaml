@@ -1,5 +1,7 @@
 homepage: "https://sendops.dev"
 documentation: "https://help.sendops.dev/website/installing-the-snippet"
 versions:
+  - sha: f98b664b037c7f2df2e29c2ea74ddc5db91cc6c9
+    changeNotes: Add the Community Template Gallery Terms of Service section required for listing. No behaviour change.
   - sha: bc365d2aaee0787c24fdfe4ab12520ed6cabc80d
     changeNotes: Initial release. Reads the first-party so_vid cookie, loads sendops.js, sends one site_visit per session; never writes a cookie.
