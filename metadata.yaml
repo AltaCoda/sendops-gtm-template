@@ -5,3 +5,5 @@ versions:
     changeNotes: Add the Community Template Gallery Terms of Service section required for listing. No behaviour change.
   - sha: bc365d2aaee0787c24fdfe4ab12520ed6cabc80d
     changeNotes: Initial release. Reads the first-party so_vid cookie, loads sendops.js, sends one site_visit per session; never writes a cookie.
+  - sha: 913168218902cf853ef3a91a3fe2af7fd44aa35a
+    changeNotes: Adds the Track event tag type, which fires a custom site_* event with optional properties from any GTM trigger; existing Page visit tags are unchanged.
