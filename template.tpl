@@ -23,7 +23,7 @@ ___INFO___
     "id": "brand_dummy",
     "displayName": "SendOps"
   },
-  "description": "Reports website activity to SendOps for a visitor your own server already identified. Page visit sends one site_visit per browser session; Track event turns any GTM trigger into a custom site_* event with no page code. The tag only reads the first-party so_vid cookie your server set; it never writes a cookie and never generates an identifier, so Safari's 7-day cap on script-written cookies does not apply.",
+  "description": "Reports website activity to SendOps for visitors your server identified. Page visit sends one site_visit per session; Track event turns any GTM trigger into a site_* event. Reads so_vid, never writes.",
   "containerContexts": [
     "WEB"
   ],
@@ -613,7 +613,7 @@ scenarios:
     assertThat(mockData.tagType).isUndefined();
     assertThat(calledPath).isEqualTo('sendops.init');
     assertApi('gtmOnSuccess').wasCalled();
-- name: Track event sends the name and properties through sendops.track
+- name: Track event sends the name and properties through track
   code: |-
     const mockData = {
       tagType: 'track_event',
