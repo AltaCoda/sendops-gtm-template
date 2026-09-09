@@ -1,6 +1,8 @@
 homepage: "https://sendops.dev"
 documentation: "https://help.sendops.dev/website/installing-the-snippet"
 versions:
+  - sha: 913168218902cf853ef3a91a3fe2af7fd44aa35a
+    changeNotes: Adds the Track event tag type, which fires a custom site_* event with optional properties from any GTM trigger; existing Page visit tags are unchanged.
   - sha: f98b664b037c7f2df2e29c2ea74ddc5db91cc6c9
     changeNotes: Add the Community Template Gallery Terms of Service section required for listing. No behaviour change.
   - sha: bc365d2aaee0787c24fdfe4ab12520ed6cabc80d
